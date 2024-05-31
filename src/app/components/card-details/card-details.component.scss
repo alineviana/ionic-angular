@@ -1,0 +1,162 @@
+ion-card {
+    align-items: center;
+    background-color: rgba(34, 0, 255, 0.45);
+    border-radius: 15px;
+    box-shadow: 8px 8px 5px rgba(23, 1, 1, 0.167);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 50px 15px;
+}
+
+.pokemon-image {
+    background: linear-gradient(135deg,
+            rgba(255, 255, 255, 0.1),
+            rgba(255, 255, 255, 0.1));
+    backdrop-filter: blur(50px);
+    -webkit-backdrop-filter: blur(50px);
+    border-bottom-left-radius: 100px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+    img {
+        padding: 1rem;
+        height: 10rem;
+        z-index: 2;
+    }
+}
+
+ion-card-header {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+
+ion-card-title {
+    color: #ffffffea;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 28px;
+    text-transform: capitalize;
+    text-shadow: 1px 1px 3px rgba(11, 1, 1, 0.864);
+    padding-left: 10px;
+}
+
+.subtitle {
+    align-items: center;
+    color: #ffffffea;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 32px;
+    text-transform: capitalize;
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    text-shadow: 1px 1px 1px rgba(11, 1, 1, 0.864);
+}
+
+ion-badge {
+    align-items: center;
+    background: linear-gradient(135deg,
+            rgba(255, 255, 255, 0.1),
+            rgba(255, 255, 255, 0.1));
+    box-shadow: 3px 5px 3px rgba(11, 1, 1, 0.238);
+    color: #000;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    text-transform: capitalize;
+}
+
+.details {
+    color: #000;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: 15px;
+    text-transform: uppercase;
+}
+
+.badge {
+    display: flex;
+    color: #ffffffea;
+    font-size: 16px;
+    justify-content: center;
+    text-transform: capitalize;
+    text-shadow: 1px 1px 1px rgba(11, 1, 1, 0.864);
+}
+
+.weight, .height {
+    align-items: center;
+    color: #ffffffea;
+    display: flex;
+    flex-direction: column;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 1px rgba(11, 1, 1, 0.864);
+
+    ion-badge {
+        align-items: center;
+        color: #000;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 15px;
+        text-transform: uppercase;
+        text-shadow: 1px 1px 1px rgba(247, 244, 244, 0.864);
+        width: fit-content;
+    }
+
+    ion-label {
+        margin-top: 10px;
+    }
+}
+
+.table, ion-card-content {
+    padding: 0 25px 15px;
+    width: 100%;
+
+    ion-card-subtitle {
+        color: #ffffffea;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 18px;
+        padding-top: 15px;
+        text-align: center;
+        text-transform: uppercase;
+        text-shadow: 1px 1px 1px rgba(11, 1, 1, 0.864);
+    }
+}
+
+.row {
+    align-items: center;
+    color: #000;
+    display: flex;
+    height: 50px;
+    justify-content: space-between;
+
+    ion-badge {
+        align-items: center;
+        font-size: 15px;
+        padding: 8px;
+        text-shadow: 1px 1px 1px rgba(247, 244, 244, 0.864);
+        width: 10%;
+    }
+
+    ion-label {
+        align-items: flex-start;
+        font-size: 14px;
+        font-weight: 700;
+        text-shadow: 1px 1px 1px rgba(247, 244, 244, 0.293);
+        text-transform: capitalize;
+    }
+}
+
+ion-progress-bar {
+    width: 60%;
+}
+
+@media (min-width: 768px) {
+    
+    ion-card {
+        display: flex;
+        margin: 10px auto;
+        width: 40%;
+    }
+}

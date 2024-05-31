@@ -1,0 +1,38 @@
+<ion-card *ngIf="pokemonDetails">
+  <div class="pokemon-image">
+    <img *ngIf="pokemonDetails.imageUrl" [src]="pokemonDetails.imageUrl" />
+  </div>
+  <ion-card-header>
+    <ion-card-subtitle class="subtitle"># {{ pokemonDetails.id }}</ion-card-subtitle>
+    <ion-card-title>{{ pokemonDetails.name }}</ion-card-title>
+  </ion-card-header>
+
+  <ion-card-content>
+    <div class="badge">
+      <ion-label>{{ pokemonDetails.abilities }}</ion-label>
+    </div>
+
+    <div class="details">
+      <div class="weight">
+        <ion-badge>Weight</ion-badge>
+        <ion-label>{{ pokemonDetails.weight }}</ion-label>
+      </div>
+
+      <div class="height">
+        <ion-badge>Height</ion-badge>
+        <ion-label>{{ pokemonDetails.height }}</ion-label>
+      </div>
+    </div>
+
+    <div class="table">
+      <ion-card-subtitle>Base States</ion-card-subtitle>
+
+      <div class="row" *ngFor="let stat of pokemonDetails.stats">
+        <ion-label>{{ stat.stat }}</ion-label>
+        <ion-progress-bar value=".5" buffer=".25" color="tertiary"></ion-progress-bar>
+        <ion-badge slot="end">{{ stat.base_stat }}</ion-badge>
+      </div>
+    </div>
+
+  </ion-card-content>
+</ion-card>

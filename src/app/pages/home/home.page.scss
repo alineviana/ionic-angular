@@ -1,0 +1,52 @@
+#container {
+  left: 0;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#container strong {
+  font-size: 20px;
+  line-height: 26px;
+}
+
+#container p {
+  color: #8c8c8c;
+  font-size: 16px;
+  line-height: 22px;
+  margin: 0;
+}
+
+#container a {
+  text-decoration: none;
+}
+
+ion-content div {
+  display: flex;
+  justify-content: center;
+}
+
+app-cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.paginate {
+  margin-top: 35px;
+}
+
+@media (min-width: 768px) {
+  .paginate {
+    margin-top: 70px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .paginate {
+    margin-top: 120px;
+  }
+}

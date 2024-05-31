@@ -1,0 +1,17 @@
+<ion-card *ngFor="let pokemon of pokemonsToShow">
+  <ion-card-content>
+    <ion-card-title>{{ pokemon.name }}</ion-card-title>
+    <ion-card-subtitle class="no"># {{ pokemon.id }}</ion-card-subtitle>
+
+    <ion-badge>{{ pokemon.abilities }}</ion-badge>
+
+    <ion-button fill="solid" color="tertiary" size="small" (click)="selectPokemon(pokemon.id)">
+      + Detalhes
+    </ion-button>
+
+    <ion-img *ngIf="pokemon.imageUrl" [src]="pokemon.imageUrl"></ion-img>
+
+    <img src="../../../assets/images/pokeball.png" alt="Pokeball" class="image">
+
+  </ion-card-content>
+</ion-card>

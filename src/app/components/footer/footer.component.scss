@@ -1,0 +1,16 @@
+ion-footer {
+    background-color: rgba(51, 0, 255, 0.417);
+    bottom: 0;
+    position: fixed;
+
+    .footer, a {
+        color: #ffffffea;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        padding: 15px 25px 15px;
+        font-size: 12px;
+        text-align: end;
+        text-shadow: 1px 1px 1px rgba(11, 1, 1, 0.286);
+        text-decoration: none;
+        text-transform: capitalize;
+    }
+}

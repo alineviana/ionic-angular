@@ -1,0 +1,59 @@
+ion-card {
+    background-color: rgba(51, 0, 255, 0.417);
+    border-radius: 8px;
+    box-shadow: 6px 6px 6px rgba(23, 1, 1, 0.294);
+    height: 12rem;
+    width: 21rem;
+}
+
+ion-card-title {
+    color: white;
+    font-weight: 900;
+    text-transform: capitalize;
+    text-shadow: 1px 1px 1px rgba(11, 1, 1, 0.864);
+}
+
+.no {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+ion-badge {
+    background: rgba(0, 0, 0, .2);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 9px;
+    font-weight: 200;
+    letter-spacing: 0.9px;
+    margin: 8px 0;
+    padding: 6px;
+    text-transform: capitalize;
+}
+
+ion-img {
+    align-items: end;
+    height: 6rem;
+    position: absolute;
+    right: 1.5rem;
+    top: 1rem;
+    width: 5rem;
+    z-index: 1000;
+}
+
+ion-button {
+    background-color: rgba(72, 0, 255, 0);
+    border-radius: 8px;
+    left: 15px;
+    position: absolute;
+    top: 130px;
+    text-transform: capitalize;
+}
+
+.image {
+    bottom: 0;
+    height: 160px;
+    position: fixed;
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgb(0, 0, 0));
+    right: 5px;
+    top: 60px;
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+}
